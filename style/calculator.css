@@ -81,8 +81,12 @@
     grid-area: digit9;
 }
 
+.clear-key{
+    grid-area: clear;
+}
+
 .equal-key{
     grid-area: equal;
     background-color: bisque;
-    height: 200px;
+    height: 215px;
 }
