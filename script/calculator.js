@@ -21,7 +21,7 @@ function updateDisplay(newValue){
         case '-':
         case '*':
         case '/':
-            if (d.innerHTML.endsWith('+')){ // if +,-,*, or /, then do nothing
+            if (d.innerHTML.endsWith('+') || d.innerHTML.endsWith('-') || d.innerHTML.endsWith('*') || d.innerHTML.endsWith('/')){ 
                 break;     
             }
             else{
@@ -29,7 +29,22 @@ function updateDisplay(newValue){
                 break;
             }
         case '=':
-            //combine
+            //if empty, do nothing
+            if (d.innerHTML == ''){
+                break;
+            }
+            //if starts with or endsWith an operator, then display "Err"
+            else if(d.innerHTML.charAt(0) == ('+') || d.innerHTML.charAt(0) ==('-') || d.innerHTML.charAt(0) ==('*') || d.innerHTML.charAt(0) ==('/')){
+                d.innerHTML = "Err";
+            }
+            else if (d.innerHTML.endsWith('+') || d.innerHTML.endsWith('-') || d.innerHTML.endsWith('*') || d.innerHTML.endsWith('/')){
+                d.innerHTML = "Err";
+            }
+            //else do some math
+            else{
+                x = eval(d.innerHTML);
+                d.innerHTML = x;
+            }
             break;
         }
     }
