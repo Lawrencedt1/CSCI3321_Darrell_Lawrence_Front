@@ -12,6 +12,10 @@
         'digit7 digit8 digit9';
 }
 
+#description{
+    text-align: center;
+}
+
 .key{
     background-color: #61429d;
     color: #ffffff;
