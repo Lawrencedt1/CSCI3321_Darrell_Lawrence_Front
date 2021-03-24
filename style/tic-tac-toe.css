@@ -1,0 +1,62 @@
+#container{
+    display:grid;
+    width: 300px;
+    margin:auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    grid-gap: 2px;
+    grid-template-areas: 
+        'digit1 digit2 digit3'
+        'digit4 digit5 digit6'
+        'digit7 digit8 digit9';
+}
+
+.key{
+    background-color: #61429d;
+    color: #ffffff;
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+#status{
+    border-radius: 5px;
+    height: 45px;
+    text-align: center;
+    background-color: #ffffff;
+    line-height: 45px;
+}
+
+
+#digit1{
+    grid-area: digit1;
+}
+#digit2{
+    grid-area: digit2;
+}
+#digit3{
+    grid-area: digit3;
+}
+#digit4{
+    grid-area: digit4;
+}
+#digit5{
+    grid-area: digit5;
+}
+#digit6{
+    grid-area: digit6;
+}
+#digit7{
+    grid-area: digit7;
+}
+#digit8{
+    grid-area: digit8;
+}
+#digit9{
+    grid-area: digit9;
+}
